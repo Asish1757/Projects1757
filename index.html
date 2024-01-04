@@ -4,69 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Website</title>
+    <title>Document</title>
 </head>
-<!-- <link rel="stylesheet" href="style.css"> -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet"> -->
 <!-- <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet"> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet"> -->
 <link href="https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap" rel="stylesheet">
-
-
 
 <style>
     * {
-        background-color: rgb(190, 168, 168);
-        margin-top: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 10px;
+        margin: 5px;
+        /* A yellow border appears to show the padding in inspect element screen */
+        padding: 5px;
+        /* A purple border appears to show the padding in inspect element screen */
+        background-color: #DDD0C8;
     }
 
-    .name {
-        /* font-family: 'Stylish', serif; */
-        font-family: 'Text Me One', sans-serif;
-        text-decoration: none;
+    div#navbar {
+        /* border: 1px solid black; */
         font-weight: bold;
-        font-size: larger;
+        height: 40px;
     }
 
-    .item {
-        /* font-family: 'Stylish', serif; */
+    div#search {
+        border: 1px solid black;
+        /* font-weight: normal; */
+        /* height: 40px; */
+    }
+
+    li {
+        float: left;
+    }
+
+    li,
+    a {
+        color: black;
         font-family: 'Text Me One', sans-serif;
+        /* font-family: 'Rubik Doodle Shadow'; */
         text-decoration: none;
-        font-weight: bold;
-        font-size: large;
+        list-style-type: none;
     }
 
-    .item:hover {
-        color: #dcb448;
-        transition: 0.3s;
+    li :hover {
+        transition: 0.4s;
+        color: #ffffff;
     }
 
-    .name:hover {
-        color: grey;
+    input {
+        border-radius: 20px;
+        border: 1px solid black;
     }
 </style>
 
 <body>
-    <div style="background-color: whitesmoke;height:45px;">
-        <a style="float: left;" class="name" href="#">Asish Jena</a>
-        <div style="float: left; margin-left: 70%;">
-            <a class="item" href="#">Home</a>
-            <a class="item" href="#">About</a>
-            <a class="item" href="#">Contact</a>
-        </div>
-
+    <div id="navbar">
+        <li>
+            <a href="https://www.youtube.com">Asish Jena</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com">Home</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com">About</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com">Contact</a>
+        </li>
+        <input type="text">
     </div>
-
-    <div style="border: 1px solid red;">
-        kj
-    </div>
-
-    <p>"Passionate creator and relentless visionary, [Your Name] weaves a symphony of imagination and skill,
-        transforming ideas into digital masterpieces that resonate with beauty and purpose."</p>
 </body>
 
 </html>
